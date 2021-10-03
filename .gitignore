@@ -1,1 +1,6 @@
 myvenv
+__pycache__
+
+# Django stuff:
+*.log
+*.pot
