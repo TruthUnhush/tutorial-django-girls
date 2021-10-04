@@ -13,34 +13,36 @@
     </section>
 
     <div class="blog-entry">
-      <h3>
-        <a href="">1° post</a>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti qui vitae totam eveniet natus
-          sunt distinctio impedit ex minus dolorum iure vel quo fugiat praesentium quos, mollitia, a eos
-          fugit.
-        </p>
-      </h3>
+      <h3><a href="">1° post</a></h3>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti qui vitae totam eveniet natus sunt
+        distinctio impedit ex minus dolorum iure vel quo fugiat praesentium quos, mollitia, a eos fugit.
+      </p>
     </div>
     <div class="blog-entry">
-      <h3>
-        <a href="">2° post</a>
-        <p>
-          Praesentium quia, deserunt eligendi quisquam iste qui eaque numquam maiores dolor doloribus sapiente
-          placeat, illum vero. Illo libero doloremque voluptatem deleniti corrupti odit molestias, ab deserunt
-          tempora ipsam tenetur consequuntur.
-        </p>
-      </h3>
+      <h3><a href="">2° post</a></h3>
+      <p>
+        Praesentium quia, deserunt eligendi quisquam iste qui eaque numquam maiores dolor doloribus sapiente
+        placeat, illum vero. Illo libero doloremque voluptatem deleniti corrupti odit molestias, ab deserunt
+        tempora ipsam tenetur consequuntur.
+      </p>
     </div>
     <div class="blog-entry">
-      <h3>
-        <a href="">3° post</a>
-        <p>
-          Sapiente impedit sed explicabo optio quia ut, temporibus ea iste, tempore ullam, fuga minima illum
-          aspernatur animi tenetur incidunt voluptates nam dolores excepturi dolore vitae natus maiores. Ea,
-          odio debitis!
-        </p>
-      </h3>
+      <h3><a href="">3° post</a></h3>
+      <p>
+        Sapiente impedit sed explicabo optio quia ut, temporibus ea iste, tempore ullam, fuga minima illum
+        aspernatur animi tenetur incidunt voluptates nam dolores excepturi dolore vitae natus maiores. Ea,
+        odio debitis!
+      </p>
+
+      <h2>This post are fetched from the database</h2>
     </div>
+    {% for post in posts %}
+    <div>
+      <p>posted: {{ post.published_date }}</p>
+      <h2><a href="">{{ post.title }}</a></h2>
+      <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+    {% endfor %}
   </body>
 </html>
