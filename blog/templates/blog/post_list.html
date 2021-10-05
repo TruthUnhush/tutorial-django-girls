@@ -1,59 +1,7 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
-    <link rel="stylesheet" href="{% static 'css/blog.css' %}" />
-    <title>My first blog using Django</title>
-  </head>
-  <body>
-    <section class="header">
-      <h1>Welcome to this blog!</h1>
-      <p>published: 04/10/2021</p>
-    </section>
-
-    <div class="container">
-      <div class="blog-entry">
-        <h3><a href="">1° post</a></h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti qui vitae totam eveniet natus
-          sunt distinctio impedit ex minus dolorum iure vel quo fugiat praesentium quos, mollitia, a eos
-          fugit.
-        </p>
-      </div>
-      <div class="blog-entry">
-        <h3><a href="">2° post</a></h3>
-        <p>
-          Praesentium quia, deserunt eligendi quisquam iste qui eaque numquam maiores dolor doloribus sapiente
-          placeat, illum vero. Illo libero doloremque voluptatem deleniti corrupti odit molestias, ab deserunt
-          tempora ipsam tenetur consequuntur.
-        </p>
-      </div>
-      <div class="blog-entry">
-        <h3><a href="">3° post</a></h3>
-        <p>
-          Sapiente impedit sed explicabo optio quia ut, temporibus ea iste, tempore ullam, fuga minima illum
-          aspernatur animi tenetur incidunt voluptates nam dolores excepturi dolore vitae natus maiores. Ea,
-          odio debitis!
-        </p>
-      </div>
-
-      <h2>These posts are fetched from the database</h2>
-      <hr />
-
-      <div class="post-container">
-        {% for post in posts %}
-        <div class="post">
-          <h2><a href="">{{ post.title }}</a></h2>
-          <p>{{ post.text|linebreaksbr }}</p>
-          <p>posted: {{ post.published_date }}</p>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-  </body>
-</html>
+{% extends 'blog/base.html' %} {% block content %} {% for post in posts %}
+<div class="post">
+  <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+  <p>{{ post.text|linebreaksbr }}</p>
+  <p>posted: {{ post.published_date }}</p>
+</div>
+{% endfor %} {% endblock %}

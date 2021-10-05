@@ -47,3 +47,17 @@ body {
   flex-basis: 400px;
   margin: 30px 10px;
 }
+
+.detail-post {
+  padding: 20px;
+  border: 3px #ccc dotted;
+  border-radius: 25px;
+}
+
+.detail-post h2 {
+  color: #ffc898;
+}
+
+.date {
+  font-style: italic;
+}
