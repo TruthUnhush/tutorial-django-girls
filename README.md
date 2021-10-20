@@ -6,25 +6,18 @@ Here you will find relevant recourses and some solutions from issues that might 
 
 ---
 
-[Tutorial](https://tutorial.djangogirls.org)
-
-[Coaching manual](https://coach.djangogirls.org)
-
-[Linux’s command for GitBash users like me](https://ss64.com)
-
-[Color pallette for CSS](https://colorhunt.co)
-
-[Hosting for the back-end(Server)](https://www.pythonanywhere.com)
-
-[Pip usage](https://packaging.python.org/tutorials/installing-packages/)
-
-[Quick reference to use VIM on console](https://stackoverflow.com/questions/11828270/how-do-i-exit-the-vim-editor)
-
-Git ignore configuration [for Python](https://stackoverflow.com/questions/3719243/best-practices-for-adding-gitignore-file-for-python-projects) & [Others](https://www.toptal.com/developers/gitignore)
-
-[Extra recourses from the Django girls's tutorial](https://tutorial.djangogirls.org/es/whats_next/)
-
-[How to contribute to the tutorial](https://github.com/DjangoGirls/tutorial/blob/master/README.md)
+| Link                                                                                                                                                                                                    | Description                            |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
+| [Tutorial](https://tutorial.djangogirls.org)                                                                                                                                                            | Official Tutorial                      |
+| [Coaching manual](https://coach.djangogirls.org)                                                                                                                                                        | Official conduct guideline             |
+| [Linux’s commands](https://ss64.com)                                                                                                                                                                    | For GitBash users like me              |
+| [Color pallette for CSS](https://colorhunt.co)                                                                                                                                                          | A good bunch of colors                 |
+| [Hosting for the back-end(Server)](https://www.pythonanywhere.com)                                                                                                                                      | Where our code will be hosted          |
+| [Pip usage](https://packaging.python.org/tutorials/installing-packages/)                                                                                                                                | A complete reference PIP               |
+| [Quick reference to use VIM on console](https://stackoverflow.com/questions/11828270/how-do-i-exit-the-vim-editor)                                                                                      | A quick set of commands                |
+| Git ignore configuration [for Python](https://stackoverflow.com/questions/3719243/best-practices-for-adding-gitignore-file-for-python-projects) & [Others](https://www.toptal.com/developers/gitignore) | Recommendations for which files ignore |
+| [Extra recourses from the Django girls's tutorial](https://tutorial.djangogirls.org/es/whats_next/)                                                                                                     | What's next                            |
+| [How to contribute to the tutorial](https://github.com/DjangoGirls/tutorial/blob/master/README.md)                                                                                                      | If you want to contribute              |
 
 ## Issues
 
